@@ -1,0 +1,250 @@
+
+
+
+/*======================== BUTTONS =====================*/
+.button {
+    -fx-font-weight: lighter;
+    -fx-font-size: 14px;
+}
+
+.button:hover {
+    -fx-cursor: hand;
+    
+}
+
+#GreenButton {
+    -fx-background-color: #1ED760;
+    -fx-text-fill: #000000;
+    -fx-background-radius: 14px;
+    -fx-border-radius: 14px;
+    
+    
+}
+
+#GreenButton2 {
+    /*-fx-background-color: #1db954;*/
+    -fx-background-color: linear-gradient(to right, #1db985, #1ed737);
+    -fx-text-fill: white;
+
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+
+#GreenButton:hover {
+    /*-fx-background-color: #1ed737;*/
+    -fx-background-color: linear-gradient(to right, #1db985, #1ed784);
+}
+
+#GreenButton2:hover {
+
+}
+
+
+#OrangeButton {
+    -fx-background-color: linear-gradient(to right, #ee8700, #f14804);
+    /*-fx-background-color: linear-gradient(to right, #ee8700, #3bf104);*/
+    -fx-font-size: 15;
+}
+
+#OrangeButton:hover {
+    -fx-background-color: linear-gradient(to right, #eeea00, #f18a04);
+    -fx-background-color: linear-gradient(to top, #030300, #eeea00);
+    -fx-font-size: 15;
+    
+}
+
+
+/*======================== LABELS =====================*/
+
+.Label-Style1{
+    -fx-font-weight: Bold;
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+}
+.Label-Style2{
+    -fx-font-weight: Bold;
+    -fx-text-fill: white;
+    -fx-font-size: 17;
+}
+
+.Label-CategoryTitle{
+    -fx-font-weight: Bold;
+    -fx-text-fill: white;
+    -fx-font-size: 24;
+}
+
+.Label-DisplayedeElement-Title{
+    -fx-font-weight: Bold;
+    -fx-text-fill: white;
+    -fx-font-size:48;
+}
+
+#error_label {
+    -fx-text-fill:  #F14934;
+    -fx-font-weight: lighter;
+    -fx-font-size: 13.5;
+   
+}
+
+/*======================== IMAGES =====================*/
+
+#image_error > .glyph-icon {
+    -fx-fill:  #F14934;
+}
+
+/*======================== FIELDS =====================*/
+.text-field, .password-field {
+    
+
+}
+
+.search-container {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 100;
+}
+
+.search-text-field {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 100;
+}
+
+/*.login-text-field, .login-password-field{
+    -fx-font-weight: bolder;
+    -fx-background-color: #1f1f1fd6;
+    -fx-font-size: 14.5;
+
+  
+    -fx-text-fill: #ffffff;
+
+    -fx-border-color: #727272;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+
+
+
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 15;
+    -fx-text-fill: #ADADAD;
+    -fx-font-size: 16;
+    -fx-highlight-fill: #ADADAD;
+}*/
+
+
+
+
+
+
+#text-field_error {
+    -fx-border-color: #E91429;
+}
+
+
+
+
+
+
+/*======================== Anchors =====================*/
+
+#Border_BackGround {
+    /*-fx-background-color: #171717;*/
+    -fx-background-color: linear-gradient(to bottom, #121212, #332336, #121212);
+    /*-fx-background-radius: 15 15 15 15;*/
+}
+
+#BackGround {
+    -fx-background-color: #000000;
+}
+
+#NavColor {
+    -fx-background-color: #000000;
+}
+
+.RowContainer-Background {
+    -fx-background-color: #242424;
+}
+
+.ElementContainer-Background {
+    -fx-background-color: #181818;
+    -fx-background-radius: 12;
+}
+
+.ElementContainer-Background:hover {
+    -fx-background-color: #282828;
+}
+
+.side-Background {
+    -fx-background-color: #bfbfbf;
+}
+
+
+
+/*================================ SCROLLPANE */
+
+
+
+.scroll-pane{
+    -fx-background-color:transparent;
+}
+
+.scroll-pane > .viewport {  
+    -fx-background-color: transparent;
+}
+
+
+
+.scroll-bar .increment-button {
+    visibility: hidden;
+}
+
+.scroll-bar .decrement-button {
+    visibility: hidden;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .track-background {
+    visibility: hidden;
+}
+
+.scroll-bar:vertical .track {
+    visibility: hidden;
+}
+
+.hide-thumb .scroll-bar:vertical .thumb {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal .track-background {
+    visibility: hidden;
+}
+
+.scroll-bar:horizontal .track {
+    visibility: hidden;
+}
+
+.hide-thumb .scroll-bar:horizontal .thumb {
+-fx-background-color: transparent;
+}
+
+
+/**/
+
+.chart-legend {
+    -fx-background-color:  #bfaeee;
+    -fx-stroke: #ffffff;
+ }
+
+ .chart-pie-label { 
+    -fx-weight: Bold;
+    -fx-fill: white;
+    -fx-font-size: 14;
+    
+}
+
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" stylesheets="@ApplicationTheme.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.frequencydisplayer.main_controller">
+   <top>
+      <MenuBar prefHeight="24.0" prefWidth="600.0" useSystemMenuBar="true" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#closeApplication" text="Close" />
+            </items>
+          </Menu>
+            <Menu fx:id="settingsMenu" mnemonicParsing="false" text="settings">
+              <items>
+                  <Menu fx:id="COM_menu" mnemonicParsing="false" onShowing="#update_COM_PORTS" text="Serial Port">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                    </items>
+                  </Menu>
+                  <Menu fx:id="baudrateMenu" mnemonicParsing="false" onShowing="#updateBoudrateMenu" text="Unspecified Menu" />
+                <MenuItem fx:id="ConnectDeviceItem" mnemonicParsing="false" onAction="#connectDevice" text="Connect Device" />
+                  <MenuItem fx:id="disconenctDeviceItem" mnemonicParsing="false" onAction="#disconnectDevice" text="Diconnect Device" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <AnchorPane prefHeight="376.0" prefWidth="30.0" styleClass="side-Background" BorderPane.alignment="CENTER" />
+   </left>
+   <bottom>
+      <AnchorPane prefHeight="30.0" prefWidth="600.0" styleClass="side-Background" BorderPane.alignment="CENTER" />
+   </bottom>
+   <right>
+      <AnchorPane prefHeight="346.0" prefWidth="30.0" styleClass="side-Background" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="frequenzeLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="176.0" layoutY="113.0" text="Label" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
