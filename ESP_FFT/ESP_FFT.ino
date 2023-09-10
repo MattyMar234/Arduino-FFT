@@ -1,8 +1,8 @@
 #include "arduinoFFT.h" // Standard Arduino FFT library
 
-#define SAMPLES 256              //Must be a power of 2
+#define SAMPLES 128              //Must be a power of 2
 #define SAMPLING_FREQUENCY 10000 //Hz, must be 10000 or less due to ADC conversion time. Determines maximum frequency that can be analysed by the FFT.
-#define amplitude 50
+#define peckValue 250
 
 #define analogPin A0
 
@@ -84,7 +84,7 @@ void loop()
 
   unsigned int index  = (peak * SAMPLES) / (1.0 * SAMPLING_FREQUENCY);
 
-  if(vReal[index] > 210) {
+  if(vReal[index] > peckValue) {
     String s = "f:"+String(peak);
     Serial.println(s);
   
